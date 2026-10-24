@@ -1,0 +1,37 @@
+scope:
+  allowed_networks:
+    - "127.0.0.0/8"
+    - "10.0.0.0/8"
+  excluded_ips: []
+  excluded_ports: [502, 503]
+  allowed_commands:
+    - "curl"
+    - "nmap"
+    - "ping"
+    - "dig"
+    - "nc"
+    - "traceroute"
+    - "smbclient"
+    - "impacket-samrdump"
+    - "impacket-rpcdump"
+    - "nxc"
+    - "gobuster"
+    - "nikto"
+    - "redis-cli"
+    - "onesixtyone"
+    - "snmpwalk"
+    - "showmount"
+    - "ldapsearch"
+    - "wpscan"
+llm:
+  base_url: "http://127.0.0.1:8080/v1"
+  model_name: "local-model"
+  max_context: 8192
+executor:
+  max_concurrency: 4
+  default_timeout: 60.0
+loop:
+  poll_interval_seconds: 30.0
+passive_discovery:
+  enabled: true
+  interface: null

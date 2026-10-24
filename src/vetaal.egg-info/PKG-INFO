@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: vetaal
+Version: 1.0.0
+Summary: Automated local security auditing framework.
+Author-email: Security Engineer <developer@local.net>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.22.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: scapy>=2.5.0
+
+# Vetaal
+
+Automated local security auditing framework.
+
+## Quickstart
+
+```bash
+pip install -e .
+python -m vetaal.main --config config/config.yaml
